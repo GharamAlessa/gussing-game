@@ -2,7 +2,7 @@
 
 
 
-/*let username = prompt('whats your name?');
+let username = prompt('whats your name?');
 //console.log(' Hello '+username);
 alert(' hello ' + username);
 
@@ -80,22 +80,15 @@ if (meet === "yes" || meet === "y") {
     alert('it will be honor to meet you')
 }
 
-alert(' i hope you enjoed this little game ' + username)*/
+alert(' i hope you enjoed this little game ' + username)
 
 
 
 
-}let food=['burger','steak','pizza','mansaf'];
-console.log(food.length);
-// console.log(food[0]);
-// console.log(food[1]);
+let hobi=['writing','reading','swimming','playing music'];
+console.log(hobi.length);
+for(let i=0; i<hobi.length; i++){
 
 
-for(let i=0; i<food.length; i++){
-    // food[0]
-    // food[1]
-    // food[2]
-    // food[3]
-
-    console.log(food[i]);
+    console.log(hobi[i]);
 }
