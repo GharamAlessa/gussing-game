@@ -54,6 +54,7 @@ function q2() {
 }
 q2();
 
+function q3() {
 
     let cat = prompt('do you think i have a pet?')
     // console.log(cat);
@@ -75,12 +76,9 @@ q2();
         alert("pleaz anser with yes/y no/n");
 
     }
-
-
 }
-
-
-
+    q3();
+    
     let sport = prompt('do you think i play any sport?')
 // console.log(sport);
 console.log('before', sport);
