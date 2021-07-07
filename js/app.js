@@ -8,24 +8,28 @@ alert(' hello ' + username);
 
 
 
+function q1() {
 
-
-let play = prompt('Do you like gussing games?')
-// console.log(play);
-console.log('before', play);
-play = play.toLocaleLowerCase();
-console.log('after', play);
-
-if (play === "yes" || play === "y") {
-    //console.log('grate! me too');
-    score++;
-    alert('grate! me too');
-} else if (play === "no" || play === "n") {
-    // console.log('you will after this game');
-    alert(' you will like it after this game');
-} else {
-    alert('please answer with yes/y or no/n');
+    let play = prompt('Do you like gussing games?')
+    // console.log(play);
+    console.log('before', play);
+    play = play.toLocaleLowerCase();
+    console.log('after', play);
+    
+    if (play === "yes" || play === "y") {
+        //console.log('grate! me too');
+        score++;
+        alert('grate! me too');
+    } else if (play === "no" || play === "n") {
+        // console.log('you will after this game');
+        alert(' you will like it after this game');
+    } else {
+        alert('please answer with yes/y or no/n');
+    }
+    
 }
+q1(); 
+
 
 
 
