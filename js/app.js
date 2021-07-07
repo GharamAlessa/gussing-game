@@ -101,30 +101,29 @@ function q3() {
         
     }
   q4();
-  
+
+    function q5() {
+        let meet = prompt('have we ever met?')
+        // console.log(meet);
+        console.log('before', meet);
+        meet = meet.toLocaleLowerCase();
+        console.log('after', meet);
+        
+        if (meet === "yes" || meet === "y") {
+            //console.log('really! thats sounds intresting');
+            alert('really! thats sounds intresting');
+        } else if (meet === "no" || meet === "n") {
+            alert('it will be honor to meet you');
+            score++;
+        }
+        else {
+            // console.log('it will be honor to meet you');
+            alert("pleaz anser with yes/y no/n");
+        }
+          
+    }
+    q5();
     
-    let meet = prompt('have we ever met?')
-// console.log(meet);
-console.log('before', meet);
-meet = meet.toLocaleLowerCase();
-console.log('after', meet);
-
-if (meet === "yes" || meet === "y") {
-    //console.log('really! thats sounds intresting');
-    alert('really! thats sounds intresting');
-} else if (meet === "no" || meet === "n") {
-    alert('it will be honor to meet you');
-    score++;
-}
-else {
-    // console.log('it will be honor to meet you');
-    alert("pleaz anser with yes/y no/n");
-}
-
-   
-}
-
-
     let guessNumber = '';
     let correctNumber = 6;
     
