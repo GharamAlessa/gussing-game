@@ -78,32 +78,31 @@ function q3() {
     }
 }
     q3();
+    function q4() {
+        let sport = prompt('do you think i play any sport?')
+        // console.log(sport);
+        console.log('before', sport);
+        sport = sport.toLocaleLowerCase();
+        console.log('after', sport);
+        
+        if (sport === "yes" || sport === "y") {
+            //console.log('yeah i workout evrey day');
+            alert('yeah i workout evrey day');
+            score++;
+        }else if (sport === "no" || sport === "n") {
+        
+            alert(' you look like not a big fan of sports');
+            
+        } 
+        else {
+            // console.log(' you look like not a big fan of sports');
+           alert("pleaz anser with yes/y no/n");
+        }
+        
+    }
+  q4();
+  
     
-    let sport = prompt('do you think i play any sport?')
-// console.log(sport);
-console.log('before', sport);
-sport = sport.toLocaleLowerCase();
-console.log('after', sport);
-
-if (sport === "yes" || sport === "y") {
-    //console.log('yeah i workout evrey day');
-    alert('yeah i workout evrey day');
-    score++;
-}else if (sport === "no" || sport === "n") {
-
-    alert(' you look like not a big fan of sports');
-    
-} 
-else {
-    // console.log(' you look like not a big fan of sports');
-   alert("pleaz anser with yes/y no/n");
-}
-    
-}
-
-
-
-
     let meet = prompt('have we ever met?')
 // console.log(meet);
 console.log('before', meet);
