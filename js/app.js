@@ -30,8 +30,6 @@ function q1() {
 }
 q1();
 
-
-
 function q2() {
     let drive = prompt('Do you think i can drive?')
     // console.log(drive);
@@ -77,123 +75,126 @@ function q3() {
 
     }
 }
-    q3();
-    function q4() {
-        let sport = prompt('do you think i play any sport?')
-        // console.log(sport);
-        console.log('before', sport);
-        sport = sport.toLocaleLowerCase();
-        console.log('after', sport);
-        
-        if (sport === "yes" || sport === "y") {
-            //console.log('yeah i workout evrey day');
-            alert('yeah i workout evrey day');
-            score++;
-        }else if (sport === "no" || sport === "n") {
-        
-            alert(' you look like not a big fan of sports');
-            
-        } 
-        else {
-            // console.log(' you look like not a big fan of sports');
-           alert("pleaz anser with yes/y no/n");
-        }
-        
-    }
-  q4();
+q3();
+function q4() {
+    let sport = prompt('do you think i play any sport?')
+    // console.log(sport);
+    console.log('before', sport);
+    sport = sport.toLocaleLowerCase();
+    console.log('after', sport);
 
-    function q5() {
-        let meet = prompt('have we ever met?')
-        // console.log(meet);
-        console.log('before', meet);
-        meet = meet.toLocaleLowerCase();
-        console.log('after', meet);
-        
-        if (meet === "yes" || meet === "y") {
-            //console.log('really! thats sounds intresting');
-            alert('really! thats sounds intresting');
-        } else if (meet === "no" || meet === "n") {
-            alert('it will be honor to meet you');
-            score++;
-        }
-        else {
-            // console.log('it will be honor to meet you');
-            alert("pleaz anser with yes/y no/n");
-        }
-          
-    }
-    q5();
-    function q6() {
+    if (sport === "yes" || sport === "y") {
+        //console.log('yeah i workout evrey day');
+        alert('yeah i workout evrey day');
+        score++;
+    } else if (sport === "no" || sport === "n") {
 
-        let guessNumber = '';
-        let correctNumber = 6;
-        
-        for (let i = 0; i < 4; i++) {
-            console.log(i);
-            guessNumber = prompt('guess a number between 0 and 10');
-            // console.log(typeof guessNumber);
-            guessNumber = parseInt(guessNumber);
-        
-        
-            if (guessNumber > correctNumber) {
-                alert('its too high');
-            } else if (guessNumber < correctNumber) {
-                alert('its too low');
-            } else if (guessNumber === 6) {
-                alert('correct');
-                score++;
-                // score=score+1
-                break;
-                // i=5;
-            } else {
-                alert('please write a number');
-            }
-            // i==3
-            // console.log('hello there');
-        
-            if (i === 3) {
-                alert('you ran out of tries the correct answer is 6');
-            }
-        
-        }
-          
-    }
-    q6();
-    
-     
-
-let response = '';
-let colors = ['black', 'red', 'white', 'blue', 'yellow', 'green'];
-// console.log(colors.length);
-
-// let flag=false;
-for (let j = 0; j < 6; j++) {
-    response = prompt('guess one of my favourite colors');
-
-    for (let i = 0; i < colors.length; i++) {
-        // colors[0];
-        // colors[1];
-        console.log(colors[i]);
-        if (colors[i] === response) {
-            alert('correct, and here are all the answers ' + colors);
-            // break;
-            // flag=true;
-            // break bigloop;
-            score++;
-            j = 10;
-        }
+        alert(' you look like not a big fan of sports');
 
     }
-    if (j === 5) {
-        alert('sorry no more tries ' + colors);
-    } else if (j < 6) {
-        alert('wrong answer');
+    else {
+        // console.log(' you look like not a big fan of sports');
+        alert("pleaz anser with yes/y no/n");
     }
 
-    // if (flag===true) {
-    //     break;
-    // }
 }
+q4();
+
+function q5() {
+    let meet = prompt('have we ever met?')
+    // console.log(meet);
+    console.log('before', meet);
+    meet = meet.toLocaleLowerCase();
+    console.log('after', meet);
+
+    if (meet === "yes" || meet === "y") {
+        //console.log('really! thats sounds intresting');
+        alert('really! thats sounds intresting');
+    } else if (meet === "no" || meet === "n") {
+        alert('it will be honor to meet you');
+        score++;
+    }
+    else {
+        // console.log('it will be honor to meet you');
+        alert("pleaz anser with yes/y no/n");
+    }
+
+}
+q5();
+function q6() {
+
+    let guessNumber = '';
+    let correctNumber = 6;
+
+    for (let i = 0; i < 4; i++) {
+        console.log(i);
+        guessNumber = prompt('guess a number between 0 and 10');
+        // console.log(typeof guessNumber);
+        guessNumber = parseInt(guessNumber);
+
+
+        if (guessNumber > correctNumber) {
+            alert('its too high');
+        } else if (guessNumber < correctNumber) {
+            alert('its too low');
+        } else if (guessNumber === 6) {
+            alert('correct');
+            score++;
+            // score=score+1
+            break;
+            // i=5;
+        } else {
+            alert('please write a number');
+        }
+        // i==3
+        // console.log('hello there');
+
+        if (i === 3) {
+            alert('you ran out of tries the correct answer is 6');
+        }
+
+    }
+
+}
+q6();
+
+function q7() {
+
+    let response = '';
+    let colors = ['black', 'red', 'white', 'blue', 'yellow', 'green'];
+    // console.log(colors.length);
+
+    // let flag=false;
+    for (let j = 0; j < 6; j++) {
+        response = prompt('guess one of my favourite colors');
+
+        for (let i = 0; i < colors.length; i++) {
+            // colors[0];
+            // colors[1];
+            console.log(colors[i]);
+            if (colors[i] === response) {
+                alert('correct, and here are all the answers ' + colors);
+                // break;
+                // flag=true;
+                // break bigloop;
+                score++;
+                j = 10;
+            }
+
+        }
+        if (j === 5) {
+            alert('sorry no more tries ' + colors);
+        } else if (j < 6) {
+            alert('wrong answer');
+        }
+
+        // if (flag===true) {
+        //     break;
+        // }
+    }
+
+}
+q7();
 
 
 alert(`thank you ${username}, your score is ${score}/7`);
