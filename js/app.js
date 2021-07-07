@@ -1,11 +1,7 @@
 'use strict';
 
 
-<<<<<<< HEAD
-
-=======
-let score=0;
->>>>>>> 47ffa9f8beb4813703d5c71f9158a8023cf03927
+let score = 0;
 let username = prompt('whats your name?');
 //console.log(' Hello '+username);
 alert(' hello ' + username);
@@ -24,10 +20,10 @@ if (play === "yes" || play === "y") {
     //console.log('grate! me too');
     score++;
     alert('grate! me too');
-} else if(play === "no" || play === "n") {
+} else if (play === "no" || play === "n") {
     // console.log('you will after this game');
     alert(' you will like it after this game');
-}else{
+} else {
     alert('please answer with yes/y or no/n');
 }
 
@@ -96,9 +92,7 @@ if (meet === "yes" || meet === "y") {
     score++;
 }
 
-<<<<<<< HEAD
-alert(' i hope you enjoed this little game ' + username)
-=======
+
 alert(' i hope you enjoed this little game ' + username);
 
 
@@ -132,7 +126,7 @@ for (let i = 0; i < 4; i++) {
     if (i===3) {
         alert('you ran out of tries the correct answer is 6');
     }
-    
+
 }
 
 
@@ -140,20 +134,15 @@ for (let i = 0; i < 4; i++) {
 
 
 
->>>>>>> 47ffa9f8beb4813703d5c71f9158a8023cf03927
 
 
 
 
-<<<<<<< HEAD
-let hobi=['writing','reading','swimming','playing music'];
-console.log(hobi.length);
-for(let i=0; i<hobi.length; i++){
 
 
     console.log(hobi[i]);
 }
-=======
+
 
 
 // question 7
@@ -181,7 +170,7 @@ let colors=['black','red','white','blue','yellow','green'];
 // let flag=false;
 for (let j = 0; j <6; j++) {
     response=prompt('guess one of my favourite colors');
-    
+
     for (let i = 0; i < colors.length; i++) {
         // colors[0];
         // colors[1];
@@ -194,14 +183,14 @@ for (let j = 0; j <6; j++) {
             score++;
             j=10;
         }
-        
+
     }
     if (j===5) {
         alert('sorry no more tries '+colors);
     }else if(j<6){
         alert('wrong answer');
     }
-   
+
     // if (flag===true) {
     //     break;
     // }
@@ -215,10 +204,9 @@ alert(`thank you ${username}, your score is ${score}/7`);
 
 //     for (let j = 0; j <10; j++) {
 //         console.log('inside loop',j);
-        
+
 //     }
-    
+
 // }
 
 
->>>>>>> 47ffa9f8beb4813703d5c71f9158a8023cf03927
