@@ -123,45 +123,44 @@ function q3() {
           
     }
     q5();
-    
-    let guessNumber = '';
-    let correctNumber = 6;
-    
-    for (let i = 0; i < 4; i++) {
-        console.log(i);
-        guessNumber = prompt('guess a number between 0 and 10');
-        // console.log(typeof guessNumber);
-        guessNumber = parseInt(guessNumber);
-    
-    
-        if (guessNumber > correctNumber) {
-            alert('its too high');
-        } else if (guessNumber < correctNumber) {
-            alert('its too low');
-        } else if (guessNumber === 6) {
-            alert('correct');
-            score++;
-            // score=score+1
-            break;
-            // i=5;
-        } else {
-            alert('please write a number');
+    function q6() {
+
+        let guessNumber = '';
+        let correctNumber = 6;
+        
+        for (let i = 0; i < 4; i++) {
+            console.log(i);
+            guessNumber = prompt('guess a number between 0 and 10');
+            // console.log(typeof guessNumber);
+            guessNumber = parseInt(guessNumber);
+        
+        
+            if (guessNumber > correctNumber) {
+                alert('its too high');
+            } else if (guessNumber < correctNumber) {
+                alert('its too low');
+            } else if (guessNumber === 6) {
+                alert('correct');
+                score++;
+                // score=score+1
+                break;
+                // i=5;
+            } else {
+                alert('please write a number');
+            }
+            // i==3
+            // console.log('hello there');
+        
+            if (i === 3) {
+                alert('you ran out of tries the correct answer is 6');
+            }
+        
         }
-        // i==3
-        // console.log('hello there');
-    
-        if (i === 3) {
-            alert('you ran out of tries the correct answer is 6');
-        }
-    
+          
     }
+    q6();
     
-    
-}
-
-
-
-    
+     
 
 let response = '';
 let colors = ['black', 'red', 'white', 'blue', 'yellow', 'green'];
