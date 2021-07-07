@@ -1,0 +1,21 @@
+ul{
+
+        list-style-type: circle;
+        padding: 20px;   
+        font-size: 100%;
+
+}
+ol {
+    list-style-type:decimal;
+    padding: 25px;
+    font-size: 100%;
+}
+h1 {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 330%; }
+    p {
+        color:black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 120%;
+      }
